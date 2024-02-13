@@ -21,7 +21,7 @@ npx react-native@latest init ProjectName
 ## Passo 2: Incie o Metro em um terminal separado:
 
 ```bash
-npm run
+npm run start
 ```
 
 ## Passo 3: Incie o Metro em um terminal separado:
