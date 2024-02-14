@@ -11,6 +11,12 @@
 choco install -y nodejs-lts microsoft-openjdk17
 ```
 
+>**Nota**: Em caso de erro semelhante: "O termo 'choco' não é reconhecido como nome de cmdlet" habilite o uso do Chocolatey com o comando abaixo, lembre-se de abri o Terminal como Administrador.
+
+```bash
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "(iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))) >$null 2>&1" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+```
+
 ## Se você instalou anteriormente um pacote global react-native-cli, remova-o, pois pode causar problemas inesperados:
 
 ```bash
